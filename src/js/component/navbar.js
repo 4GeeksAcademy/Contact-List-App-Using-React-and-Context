@@ -1,15 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import getState from "../store/flux";
 
 export const Navbar = () => {
 	return (
-		<nav className="navbar navbar-light bg-light mb-3">
+		<nav className="navbar bg-dark mb-3">
+			<div className="container-fluid justify-content-start"> 
 			<Link to="/">
-				<span className="navbar-brand mb-0 h1">React Boilerplate</span>
+				<button className="btn btn-success mx-3">Home</button>
 			</Link>
-			<div className="ml-auto">
-				<Link to="/demo">
-					<button className="btn btn-primary">Check the Context in action</button>
+				<Link to="/form">
+					<button className="btn btn-primary ">Add +</button>
+				</Link>
+				<Link to="/contact-list">
+					<button className="btn btn-warning mx-3">Contact List</button>
 				</Link>
 			</div>
 		</nav>

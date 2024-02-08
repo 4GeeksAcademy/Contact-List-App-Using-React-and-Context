@@ -4,12 +4,9 @@ import "../../styles/home.css";
 
 export const Home = () => (
 	<div className="text-center mt-5">
-		<h1>Hello Rigo!</h1>
+		<h1>Contact List</h1>
 		<p>
-			<img src={rigoImage} />
+			<img className="img" src="https://icon-library.com/images/ios-contacts-icon/ios-contacts-icon-13.jpg"></img>
 		</p>
-		<a href="#" className="btn btn-success">
-			If you see this green button, bootstrap is working
-		</a>
 	</div>
 );
